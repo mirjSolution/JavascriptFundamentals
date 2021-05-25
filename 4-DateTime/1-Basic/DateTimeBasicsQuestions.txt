@@ -1,0 +1,13 @@
+Q.1) Explain different ways of creating date/time object ?
+A.1) new Date()
+     new Date(year, month, day, hours, minutes, seconds, milliseconds)
+     new Date(milliseconds)
+     new Date(string)
+Q.2) What will be the output of the below code ?
+     => const dt = new Date(2020,08,23);
+          console.log(dt); 
+A.2) // 2020-09-23T04:00:00.000Z
+Q.3) Explain various formats of ISO standard followed by JavaScript ?
+A.3) Year - 'YYYY'    // YYYY-MM-DDT00:00:00.000Z
+     Month - 'MM'
+     Day - 'DD'

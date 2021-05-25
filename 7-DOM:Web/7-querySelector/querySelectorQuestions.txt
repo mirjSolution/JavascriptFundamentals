@@ -1,0 +1,15 @@
+The querySelector() -> method returns the first element that matches a specified CSS selector inside the method given as an argument. It searches in the entire document 
+The querySelectorAll() -> method returns all the elements
+
+Q.1) Explain the difference between querySelector() & querySelectorAll().
+A.1) querySelector() -> returns the first matching values whereas querySelectorAll() will return all return element
+Q.2) How can you search elements using pseudo classes?
+A.2) const elements = document.querySelector(":hover")
+Q.3) Between getElementBy methods and querySelector methods which is better to use?
+A.3) getElementById() -> this is the perfect method to search a specific element
+     querySelector() -> this is method is useful or class name/selectors etc.
+    
+
+
+
+

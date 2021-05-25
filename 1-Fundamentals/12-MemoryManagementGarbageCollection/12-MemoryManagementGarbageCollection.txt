@@ -1,0 +1,35 @@
+What is the concept of GC garbage collection?
+-> When you declare a variable, object, array or function it will be stored somewhere in the memory
+-> When program ends the data inside location is garbage which needs to be cleared
+-> Memory is releases when program ends 
+-> In some programming languages you can call routine to clear the garbage and some languages manages automatically
+-> In short clear these free locations is the process of collecting the garbage or garbage collection or GC
+
+In Javascript
+-> Javascript is a high level programming language you do not need to allocate memory
+-> Memory allocations and releasing happens automatically
+-> Making the memory free is the process of Garbage Collection (GC) and there is a routine who does it, called the garbage collector
+-> GC is process is also called automatic memory managent with reference to Javascript
+-> The garbage collection considers refererences and it tries to release the memory if a location is not reachable
+-> Mark and Sweep Algorithm -> the algorithm starts from the root object and checks from the root object and checks for the references link
+-> In case if this algorithm finds unreachable locations, then those are the location to be removed
+-> Mark will mark all the reference items and values without any refernece will be unmarked and sweep or removed
+-> All modern browsers uses mark and sweep algorithm.
+
+Summary 
+-> Memory allocations is done automatically
+-> As long as references exist, there will not be any cleaning or garbage collecting
+-> If a location is unreachable then that will be collected/released as garbage
+
+Q.1) How does GC work in Javascript?
+A.1) Mark and sweep algorithm is used for garbage collection.
+     This algorithm will start from the global object and it marks the referenced values and unreachable locations are cleared 
+Q.2) Explain Mark and Sweep algorithm's pattern?
+A.2) The algorithm will start from the root element and then start making references values and unmarked values will be cleared
+Q.3) Which situation can create memory leak?
+A.3) If the reference is lost or unreachable, since javascript is a higher order programming language garbage collection is done automatically so you don't need to worry about it.    
+
+
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function test() {
+        ch = prompt('Enter character');
+        ch = ch.toLowerCase();
+        if (parseInt(ch)) {
+          alert(`${ch} is a number`);
+          return test();
+        }
+        if (Number.isInteger(ch)) {
+          alert(`${ch} is not a letter`);
+        }
+        if (
+          ch === 'a' ||
+          ch === 'e' ||
+          ch === 'i' ||
+          ch === 'o' ||
+          ch === 'u'
+        ) {
+          alert(`${ch} is a vowel`);
+        } else {
+          alert(`${ch} is a consonant`);
+        }
+        test();
+      }
+      test();
+    </script>
+  </body>
+</html>

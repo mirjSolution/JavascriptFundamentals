@@ -1,0 +1,12 @@
+Q.1) What is a module ?
+A.1) Modules means dividing your code into various logical pieces and importing them when required
+Q.2) What is a named export and import ?
+A.2) Named export has a multiple export in a file and you can import it by using import { function names } from 'location of the file' you can use also 'as' to rename the function export name and '*' if you want to select all the function name
+Q.3) Can you avoid {} while importing a named module ?
+A.3) No you cannot
+Q.4) How can you import all named modules from a file ?
+A.4) import * as calc from './calc.js
+Q.5) Is it a good practice to import all modules together ?
+A.5) If you need and you will use all the function on modules yes but it's a good practice to just choose what you really needed.
+Q.6) Do you need the same name while importing a named module or you can change ?
+A.6) You can change the name by using 'as' keyword

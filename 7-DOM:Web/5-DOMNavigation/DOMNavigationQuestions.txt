@@ -1,0 +1,25 @@
+Q.1) What is a node in DOM tree ? Explain different types of nodes ?
+A.1) a node is a value that represents one item within the Tree
+NodeType	    Named Constant
+    1	        ELEMENT_NODE
+    2	        ATTRIBUTE_NODE
+    3	        TEXT_NODE
+    4	        CDATA_SECTION_NODE
+    5	        ENTITY_REFERENCE_NODE
+    6	        ENTITY_NODE
+    7	        PROCESSING_INSTRUCTION_NODE
+    8	        COMMENT_NODE
+    9	        DOCUMENT_NODE
+    10	        DOCUMENT_TYPE_NODE
+    11	        DOCUMENT_FRAGMENT_NODE
+    12	        NOTATION_NODE
+Q.2) How can you access next same level element for a given node element ?
+A.2) To access the same level node element, we have nextElemetSibling/nextSibling.
+Q.3) What is the difference between childeNodes and children property ?
+A.3) ChildNodes returns all the nodes whereas children property returns only regular <html> elements
+Q.4) How can you check whether an element has child nodes or not ?
+A.4) chilNodes.length and hasChildNodes()
+Q.5) What is the purpose of DOM navigation ?
+A.5) The basic idea of navigation or traversal is we have access pragmatically to all the nodes in HTML page, if you want to remove specific node or modify the content 
+Q.6) What will be the output of below given statement  - element.lastChild.nextSibling ?
+A.6) The answer is null -> The element div1.lastChild is always the last one, it has no nextSibling

@@ -1,0 +1,11 @@
+Q.1) Get Character month ?
+A.1) let dt = new Date();
+     let arrMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+     console.log(arrMonths[dt.getMonth()]);
+Q.2) Find the date before 50 days of the given date.
+A.2) let dt = new Date();
+     dt.setDate(dt.getDate() - 50);
+     console.log( dt);
+Q.3) What will be the output if you add 35 as date in Date() constructor.
+A.3) let dt = new Date(2020,07,35);
+     console.log(dt); // date method prevent error it will just return the date today

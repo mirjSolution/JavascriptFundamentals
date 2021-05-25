@@ -1,0 +1,15 @@
+Q.1) What is the difference between for...in and for...of ?
+A.1) For in will display the index the for of will refer the value/element
+Q.2) What will be the output of the below code ?
+     let arr = ["ES5","ES6","ES7","ES8"];
+        arr.forEach((elem,index)=>{
+        console.log(elem,index);
+        if(index==2) {break}
+     })
+A.2) When using for each loop you cannot break the statement it will cause an syntax error.
+
+Q.3) What will be the output of below statements ?
+     let arr=[7,9,0]
+     console.log(arr[arr.length])
+A.3) undefined    
+     

@@ -1,0 +1,53 @@
+reduce() -> method reduces the array to a single value
+
+Q.1) How will you flatten an array i.e e.g converting 2 dimensional array into single dimension ?
+	 let arr=[
+    [45,90],
+    [5,6],
+    [2,4]
+	];
+	let fArr = arr.reduce((accumulator,element)=>{
+		return accumulator.concat(element);
+	},[])
+	console.log(fArr);
+
+Q.2)  Get sum of a key field of an object literal
+          => const employees=[
+    	{eNo:1001,salary:3000},
+    	{eNo:1002,salary:2200},
+   	{eNo:1003,salary:3400},
+    	{eNo:1004,salary:6000}
+            ]
+         Then find total salary of employees.
+A.2)
+const employees=[
+    {eNo:1001,salary:3000},
+    {eNo:1002,salary:2200},
+    {eNo:1003,salary:3400},
+    {eNo:1004,salary:6000}
+]
+let totalSalary = employees.reduce((accumulator,current)=>{
+ 
+    return accumulator+current.salary;
+},0);
+console.log(totalSalary);
+Q.3)  Find avg value of all elements of an array ? 
+A.3) let arr=[2,4,6,8];
+let result = arr.reduce((accumulator,current,index,array)=>{
+    accumulator+=current;
+    if(index===array.length-1){
+        return accumulator/array.length;
+    }
+    return accumulator;
+});
+console.log(result);
+Q.4) Find the sum or product of all elements ?
+A.4) let arr=[2,4,6,8];
+let result = arr.reduce((accumulator,current)=>{
+    return accumulator*current;
+});
+console.log(result);
+Q.5) What is the difference between reduce() and reduceRight() ?
+A.5) The reduce() loops from 0th index till the last index of an array
+     The reduceRight() start looping from last index to 0th index
+ 

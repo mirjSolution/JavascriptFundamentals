@@ -1,0 +1,13 @@
+onkeydown	- The event occurs when the user is pressing a key
+onkeypress	- The event occurs when the user presses a key
+onkeyup	 - The event occurs when the user releases a key
+
+Q.1) How can you check if control and Z  is pressed or not ?
+A.1) If(event.ctrlKey && event.code === keyZ) {
+        //statements
+     }
+Q.2) What does event.code return ?
+A.2) Returns the code of the key that triggered the event
+Q.3) Explain the difference between event.code and event.key ?
+A.3) event.key - Returns the key value of the key represented by the event
+     event.code - Returns the code of the key that triggered the event

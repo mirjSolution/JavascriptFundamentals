@@ -1,0 +1,49 @@
+Generators -> can help to pause and resume the code.
+-> Normally when you write a function, it returns a single value
+-> You can think of generators as a kind of function which can return multiple values in phases
+-> The function* is the keyword used to define a generator function
+-> yield is an operator which pauses the generator
+-> yield also helps to receive input and send output
+-> Generators works well with iterators
+-> yield operator is only used only in generator functions
+-> When it comes to recursive function or calling one generator function form another yield* syntax used
+-> yield should be used inside the generator function
+-> If you want to call the generator function from another or implementing recursion with generator functions then yield* syntax is used
+-> return will terminate the generator and returns done: true
+-> writing yield in finally will not allow the return() to terminate
+-> The throw() method throws an exemption at the location of yield which made the last suspension in the generator function
+-> if there is an error condition you will write throw() or return()
+Q.1) What are generator functions? Explain the syntax.
+A.1) can help to pause and resume the code.
+const genFunction = function*(){
+    console.log("Hello");
+    yield;
+    console.log("World");
+    yield;
+    console.log("and Galaxy");
+}
+const gObj = genFunction();
+for(let o of gObj){
+    console.log(o);
+}
+Q.2) Which is the right syntax function* () { } or function *(){} ?
+A.2) It's all valid as long there's an * after the function
+Q.3) Explain all methods of generator objects.
+A.3) next() -> it moves the function pointer to next line from last suspended yield
+     return() -> it allows to terminate the generator function
+     throw() -> it can help you to raise an error with the generator object
+Q.4) Explain the use of 'yield*'
+    -> is used to call generator function from another generator function or even call recursive generator function
+Q.5) Can you prevent return() from terminating the generator ?
+    -> Yes you can prevent return() from termination generator function
+    function* gen() {
+    try {
+        yield 'One';
+        yield 'Two';
+    } finally {
+        yield 'Finally';
+    }
+    }
+    const gObj = gen();
+    console.log(gObj.next());
+    console.log(gObj.return());

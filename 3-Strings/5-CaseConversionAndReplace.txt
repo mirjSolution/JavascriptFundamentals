@@ -1,0 +1,30 @@
+The toUpperCase() method returns the calling string value converted to uppercase.
+
+The toLowerCase() method returns the calling string value converted to lower case.
+
+The replace() method returns a new string with some or all matches of a pattern replaced by a replacement.
+
+Q.1) Get a character from user and check whether the character is a vowel or consonant
+A.1) let vowels = ['a', 'e', 'i', 'o', 'u']
+     function checkCharacter(character) {
+        if (vowels.includes(character.toLowerCase())) {
+            console.log(`The Character ${character} is a vowel`);
+        } else {
+           console.log(`The Character ${character} is a consonant`);
+        } 
+     } 
+
+     or 
+
+     function getVal() {
+        let ch;
+        ch = prompt('Enter character: ');
+        ch = ch.toLowerCase();
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            console.log(`is a vowel`);
+        } else {
+            console.log(`is a consonant`);
+        }
+     }
+
+     getVal();

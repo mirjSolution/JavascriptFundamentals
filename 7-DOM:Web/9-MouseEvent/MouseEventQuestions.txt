@@ -1,0 +1,37 @@
+
+return false - cancel the event
+onclick - The event occurs when the user clicks on an element
+oncontextmenu - The event occurs when the user right-clicks on an element to open a context menu
+ondblclick - The event occurs when the user double-clicks on an element
+onmousedown - The event occurs when the user presses a mouse button over an element
+onmouseenter - The event occurs when the pointer is moved onto an element
+onmouseleave - The event occurs when the pointer is moved out of an element
+onmousemove - The event occurs when the pointer is moving while it is over an element
+onmouseout - The event occurs when a user moves the mouse pointer out of an element, or out of one of its children
+onmouseover - The event occurs when the pointer is moved onto an element, or onto one of its children
+onmouseup - The event occurs when a user releases a mouse button over an element
+
+event.button - is useful when you want to check which button is pressed
+event.altKey, event.ctrlKey, event.shiftKey - useful when you want to check whether a special key or not.
+event.metakey - this will check cmd key 
+
+Q.1) How will you disable right click on an element?
+A.1) oncontextmenu="return false"
+Q.2) How can you check whether a special key is pressed or not while an event is generated?
+A.3) event.altKey, event.ctrlKey, event.shiftKey - useful when you want to check whether a special key or not.
+event.metakey - this will check cmd key in mac
+Q.3) How do you check mouse button value while an event is generated?
+A.3) function eHandler() {
+        let msg = '';
+        if(event.button === 0) {
+            msg = 'Left button is clicked';
+        } elseif(event.button === 1) {
+            msg = 'Middle button is clicked';
+        } elseif(event.button === 2) {
+            msg = 'Right button is clicked';
+        } 
+     }
+Q.4) For ctrl key and cmd on mac - how will you right the condition to check the key press.
+A.4) if(event.ctrlKey || event.metaKey) {
+        // Statements
+     }

@@ -1,0 +1,8 @@
+Events are various types of actions on which you can run your desired codes
+Event Object -> is the parent object of all event objects e.g(MouseEvent, KeyboardEvent, FocusEvent, TouchEvent, UIEvent)
+Q.1) Explain various ways to configure an event with HTML elements.
+A.1) The inline way, The common way, Bonding event later, Binding with listener
+Q.2) Explain syntax of addEventListener() method.
+A.2) Add event listener accepts 3 parameters the event name, function name, optional(Bubbling/Capturing)
+Q.3) What is an event object ?
+A.3) The event object is something that is propogated whenever there is an event generated and it gives you various properties which you can access, you have the details of the event as well the element which raised the event

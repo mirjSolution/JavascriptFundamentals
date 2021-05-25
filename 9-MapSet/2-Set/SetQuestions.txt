@@ -1,0 +1,14 @@
+- Set collection or data structure does not have keys, it has only unique values 
+- So if you add the same or duplicate value it is ignored
+- You will have unique or non repeating values only
+- Set is also iterable so you can put for ..of loop directly on the Set collection
+- forEach can also be used to loop on Set collection
+
+- To add values to a Set, you can add(), it also has 'size' property to check count of values
+
+Q.1) What is the difference between Map and Set ?
+A.1) Map method has key and value while Set method has only values which has a unique collection that means values will not repeat
+Q.2) How will you remove specific values from Set ?
+A.2) By using the .delete() method  
+Q.3) What will entries() method with Set will return ?
+A.3) It will return the values only as key and value pair

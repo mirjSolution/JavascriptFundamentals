@@ -1,0 +1,20 @@
+3 Functional behavior of arrow function
+1. The 'this' object does not work with arrow function
+2. 'arguments' object does not work with arrow function
+3. You cannot use 'new' to call arrow function
+
+Q.1) Explain the syntactical features of arrow function.
+A.1) It is less verbose easy to use if you only have a return statement you can just do it only on one line of code and you can remove the parentheses if you only have one paremeter.
+Q.2) Why 'this' does not work in arrow function?
+A.1) No because in ES6 we have class keyword to deal with the classes so we do not need a function to act as a class
+Q.3) Explain output of following code with reason.
+const obj={
+     method:()=>{
+                      console.log(this);
+      }
+}
+A.3) Normally if you use the traditional function it will refer to current context obj but if you use the arrow function the console.log 'this' will refer to window object
+Q.4) How can you handle arguments object like functionality in arrow function?
+A.4) You can use the rest parameter to deal all the parameters pass to the function
+Q.5) Can you write IIFE with arrow function syntax?
+A.5) Yes

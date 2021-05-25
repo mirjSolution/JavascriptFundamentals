@@ -1,0 +1,47 @@
+class -> is to create a blueprint or design or commonly referred as 'prototype'
+      -> 'constructor' is a method which is executed immediately you create the instance of a class
+Q.1) How can you create a class?
+A.1) class House {
+    constructor() {
+        console.log('Constructor Called')
+      }
+    }
+Q.2) When does constructor() called?
+A.2) The constructor() is called as soon as an instance of a class is created
+Q.3) Can we have dynamic property or method names in a class? Yes
+A.3) let getData = 'showData';
+     class House {
+         constructor(nDoors, windows) {
+             this.nDoors = nDoors;
+             this.windows = windows;
+         }
+         [getData]() {
+             console.log(this.nDoors, this.windows)
+         }
+     }
+Q.4) What is a class expression?
+A.4) const House = class {
+    constructor() {
+        console.log('called')
+    }
+}
+const obj=new House();
+Q.5) What are static members in a class? What is the purpose of defining them as static?
+A.5) The static keyword defines a static method or property for a class. Neither static methods nor static properties can be called on instances of the class. Instead, they're called on the class itself.
+
+This is standard behavior when you make multiple instances of a Class. If we create a method that does not access an instance property, we can use the static keyword. When creating a static method, it can only be accessed on the Class definition itself. If you try to access the method on an instance, it will fail.
+
+Q.6) How can you call static method from a class?
+const House = class {
+  static appVersion = 1.2;
+  static test() {
+    console.log('Static method called');
+    this.test1();
+  }
+  static test1() {
+    console.log('New Method');
+  }
+};
+console.log(House.appVersion);
+
+House.test();

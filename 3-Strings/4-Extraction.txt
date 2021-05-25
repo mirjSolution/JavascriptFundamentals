@@ -1,0 +1,22 @@
+The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+
+The String object's charAt() method returns a new string consisting of the single UTF-16 code unit located at the specified offset into the string.
+
+The charCodeAt() method returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.
+
+Q.1) What will be the output of below code?
+A.1) let str = 'Hello World'
+     console.log(str.slice(-5, -2)) // Wor
+Q.2) What is the difference between substr() and substring()
+A.2) The substr() method returns a portion of the string, starting at the specified index and extending
+     for a given number of characters afterwards.
+     The substring() method returns the part of the string between the start and end indexes, or to the end of the string.
+Q.3) What will be the output of the below given code?
+     let str = 'This is a test'
+A.3) console.log(str.substring(-5)) // 'This is a test' -> it cannot take a negative value but it will not give you an error and it will return the whole string instead
+Q.4) What will be the output of the below given code? Explain with reason.
+     let str = 'This is a test'
+A.4) console.log(str.substring(3,3)) // nothing literally because the start index and the end index start at the same time
+Q.5) What will be the answer of the below code?
+     let str = 'This is a test'
+     console.log(str.charAt('t')) // T

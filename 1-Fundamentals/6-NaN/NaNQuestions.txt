@@ -1,0 +1,8 @@
+Note!
+NaN - is a global property representing 'Not a number'. You normally get this error when there is a non numeric value or operation performed.
+Q.1) What will be the output of the below statement?
+console.log(NaN==NaN);
+A.1) It will return false all the time even with strict equality or non-strict equality. Because NaN always have unique values for each NaN so it will not match.
+Q.2) What is the difference between isNaN() and isFinite() method?
+A.2) isNaN() - is a global function which returns true or false depending on the function
+isFinite() - is a global function checks for NaN, Infinity and -Infinity as well. It checks whether the value is regular number or not

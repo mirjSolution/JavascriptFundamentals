@@ -1,0 +1,19 @@
+setInterval() or setTimeout() -> are methods of window
+document -> is an object of window
+document object does have various object, methods or properties like document.getElementById()
+window object has properties like innerHeight and innerWidth
+
+Q.1) What is the difference between window and document ?
+A.1) Window is the parent of document and document is an object of window
+Q.2) What is DOM [Document Object Model] or  DOM API ?
+A.2) Document object model helps you to access the elements through javascript
+Q.3) What is BOM [Browser Object Model] ?
+A.3) Objects that related to window such as location, history, screen and height and width of window
+Q.4) Explain the difference between DOM and BOM ?
+A.4) Document object Model -> accessing the element through javascript and browser object model related to window that have access to location, history, screen and height and width of window
+Q.5) Which is the global object in browser ?
+A.5) Window is the global object of the browser
+Q.6) How will we check the innerWidth and innerHeight of window ?
+A.6) window.innerHeight or innerHeight
+Q.7) How will you get hostname or value typed in address bar ?
+A.7) by using window.location and it's related properties

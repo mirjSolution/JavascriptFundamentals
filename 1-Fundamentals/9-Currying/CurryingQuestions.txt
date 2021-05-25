@@ -1,0 +1,7 @@
+Q.1) What is function currying?
+A.1) It's a way to call inner functions where you can pass arguments partially or pass multiple arguments in a function but 1 argument at a time
+Q.2)const multiplication=a=>b=>c=>a*b*c
+What will this statement do? Explain in detail.
+A.2) It is currying you have the parent function multiplication with parameter 'a' and children function that have parameter 'b'  and a grand children function that has a parameter 'c' and returns a*b*c. 
+Q.3) Explain practical usage of function currying.
+A.3) Currying is an incredibly useful technique of functional programming which solves like passing partial parameters and avoid unwanted repetitions.

@@ -1,0 +1,6 @@
+Q.1) Explain about cut,copy and paste events
+oncopy - The event occurs when the user copies the content of an element
+oncut -	The event occurs when the user cuts the content of an element
+onpaste	- The event occurs when the user pastes some content in an element
+Q.2) How can you stop an event of cut, copy or paste for an element ?
+A.2) Two ways - oncut='return false' and event.preventDefault()

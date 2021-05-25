@@ -1,0 +1,35 @@
+indexOf()       -> will search from beginning, default startIndex is 0
+                -> this method returns the index number where the item is found
+                -> when there is no searchElement in array then it will return -1
+                -> If there are more than one matches found, it will return the index of the first item found
+                -> case sensitive
+                -> when there is no searchElement in array then it will return -1
+lastIndexOf()   -> returns the last index of the found element
+                -> By default start index is array.length -1
+                -> case sensitive
+                -> when there is no searchElement in array then it will return -1
+includes()      -> method returns boolean values i.e. true or false
+find()          -> method can take callback function which is called for each element
+                -> find one value at a time and return the element or value
+                -> if there's no find value it will return undefined
+findIndex()     -> method can take callback function which is called for each element
+                -> find one value at a time and return the index number of element or value 
+                -> if there's no find value it will return undefined
+filter()        -> method return a new array rather than a single value
+                -> if there's no find value it will return empty array
+
+
+Q.1) What is the difference between find() and filter() method ?
+A.1) find() method returns only one value the first match and stops searching
+     filter() method returns new array
+Q.2) If there is no value to return, what will findIndex() return ?
+A.2) it will return undefined
+Q.3) What is the difference between indexOf() and includes() method ?
+A.3) indexOf() method return only the index
+     includes() method returns 'true' or 'false'
+Q.4) How will you search multiple values in an array ?
+A.4) filter() method is used to search multiple values in an array
+Q.5) What will be the output of this code ?
+        => let arr=["One","Two","Three","Four","Five"];
+             console.log(arr.lastIndexOf("Abcd")); 
+A.5) lastIndexOf or indexOf will return -1 if the value is not found

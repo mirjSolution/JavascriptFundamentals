@@ -1,0 +1,17 @@
+event.target -> returns the reference of element which raised the event
+event propogation -> when the event is trigger and travel to ancestor
+the default path of event propogation is bottom to top which is called bubbling or event bubble
+event.stopPropogation() -> will stop the event from bubbling
+In case you want to change the default propogation instead from (bottom to top) from (top to bottom) then that will be called capturing.
+For capture phase you have to use addEventListener() method to configure or bind the event
+Capturing means from top to bottom
+Events that are not propogated focus event
+
+Q.1) Which is the default propagation path ?
+A.1) bottom to top that is bubbling
+Q.2) How can you stop the event propagation ? 
+A.2) event.stopPropogation() method
+Q.3) How can you change the default propagation path ?
+A.3) It is called event capturing from top to bottom by using addEventListener make the third parameter true
+Q.4) How can you get the reference of element on which event is fired ?
+A.4) Using event.target, event.target.name, event.target.value

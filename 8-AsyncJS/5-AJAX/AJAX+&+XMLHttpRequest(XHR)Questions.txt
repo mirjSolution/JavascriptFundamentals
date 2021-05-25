@@ -1,0 +1,75 @@
+A Web service is a method of communication between two electronic devices over a network
+
+The primary function of HTTP is to establish a connection with the server and send HTML pages back to the user's browser.
+
+A RESTful API is an architectural style for an application program interface (API) that uses HTTP requests to access and use data. That data can be used to GET, PUT, POST and DELETE data types, which refers to the reading, updating, creating and deleting of operations concerning resources.
+
+AJAX - you can fetch the data from the server and display without refreshing the entire page
+AJAX is about making an HTTP call to the webservice, API or REST API and that too without refresing the entire page
+
+XMLHttpRequest (XHR) is a JavaScript API to create AJAX requests. Its methods provide the ability to send network requests between the browser and a server.
+
+Javascript gives the "FETCH API" nowadays to make an ajax call before it is XMLHttpRequest is widely used.
+
+AJAX -> asynchoronous javascript and xml 
+XML and Ajax is not related to XML data format, it is the reference of XMLHttpRequest object only.
+
+
+Q.1) What is AJAX?
+A.1) asynchoronous javascript and xml - making a call to the server to fetch, delete, retrieve or update the data. And with it helps the browser does not refresh
+Q.2) How will you set a timeout with an XHR request?
+A.2) let request = new XMLHttpRequest();
+request.open('GET','https://jsonplaceholder.typicode.com/comments');
+request.responseType='json';
+request.timeout=2000; //200
+request.send();
+request.onload = function(){
+   if(request.status===200){
+    console.log(request.response); 
+   }else{
+      console.log("Invalid request...")
+   }
+}
+request.ontimeout = function(){
+   console.log("Request timed out");
+}
+Q.3) How can you set the data format for response?
+A.4) request.responseType='json';
+Q.4) Explain “readyState” property of XHR.
+A.4) readyState	Holds the status of the XMLHttpRequest.
+0: request not initialized
+1: server connection established
+2: request received
+3: processing request
+4: request finished and response is ready
+Q.5) Explain the “onreadystatechange” event.
+A.5) event is fired when there is a new value in the "readyState" property.
+Q.6) How can you force the XHR request to stop the execution?
+A.6) request.abort()
+Q.7) When is the “load” method called?
+A.7) The load event is called when the call to the server is completely successful.
+     Load event is executed when the AJAX call is successfully completed.
+Q.8) How will you set HTTP headers? Explain the sequence.
+A.8) request.open()
+     request.setRequestHeader(header, value)
+     request.send()
+Q.9) Explain different ways of getting response header values?
+A.9) if (request.readyState===4 && request.status===200){
+        console.log(request.getAllResponseHeaders());
+        console.log(request.getResponseHeader('content-type'));
+        console.log(request.response); 
+  
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+

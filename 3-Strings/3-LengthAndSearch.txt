@@ -1,0 +1,15 @@
+Q.1) Explain the indexOf() and lastIndexOf() method with syntax
+A.1) let str = 'This is a test'     
+     console.log(str.indexOf('is', 5)) // 5 -> Search from beginning to end
+     console.log(str.lastIndexOf('is', 4)) // 2 -> Search from end to beginning
+Q.2) What is the difference between search() and indexOf() method?
+A.2) indexOf() cannot be used for advanced search operation like regex
+     The search() method can take regular expressions but cannot have starting position
+Q.3) What will be the output of the below given code?
+     Explain with reason?
+
+     let str = 'This is a test'
+     console.log(str.indexOf('is', 5)) // 5 -> the start position is index 5 it will begin looking for the word 'is' from beginning to end
+
+     console.log(str.lastIndexOf('is', 1)) // -1 -> the start position is 1 and it will begin looking for word 'is' from end to beginning it return -1 because the word does not exist on the syntax
+     

@@ -1,0 +1,7 @@
+Destructuring - is a concept of breakinga a data structure like array or object literal into individual variables
+Q.1) Explain a practical scenario of object literal destructuring ?
+A.1) Object literal destructuring is often used in all programs, because you get the data from the server in a JSON format which is assigned to Javascript object literal
+Q.2) Explain the output of this code
+        =>  const { a=90, b } = {  };
+              console.log(a,b);
+A.2) The output is 90, undefined object literal a has a default value of 90

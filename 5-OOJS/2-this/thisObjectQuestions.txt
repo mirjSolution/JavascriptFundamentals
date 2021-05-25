@@ -1,0 +1,18 @@
+this -> this object is that it contains the current context
+     -> when inside the function this refer to window object 
+
+Q.1) What will be the output of this code if you run in the browser and why?
+function test(){
+   console.log(this);
+}
+test();
+A.1) As long as it not inside the object literal this is always refer to window object
+Q.2) What is the context of “this” inside arrow function? Or what will be the output of this code?
+let obj={
+ 
+    test{
+       console.log(this);
+    }
+}
+obj.test();
+A.2) It will refer to window object because this keyword doesn't work with arrow function

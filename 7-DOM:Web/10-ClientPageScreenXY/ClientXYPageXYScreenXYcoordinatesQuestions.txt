@@ -1,0 +1,10 @@
+screen X/Y - represents the entire screen size of your device
+client X/Y - represents the current window 
+page X/Y - represents the document page
+
+Q.1) Explain the difference between clientX/Y and pageX/Y.
+A.1) client X/Y - represents the current window 
+page X/Y - represents the document page you will see the difference when the page scrolled
+Q.2) Explain the difference between clientX/Y and screenX/Y.
+A.2) screen X/Y - represents the entire screen size of your device
+client X/Y - represents the current window 

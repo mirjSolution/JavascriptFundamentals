@@ -1,0 +1,59 @@
+Map -> is a data structure where are you mapping value to value
+    -> Values inserted in Map collection are retrieved in the same order
+    -> is iterable
+
+    .set() -> is a method that returns the Map it's self
+    .get() -> is a method to get a specific a value
+    .size -> property that returns the number of key/value pairs
+    .values() -> is a method that returns the value of the Map using for of ... loop
+    .keys() -> is a method that returns the keys of the Map using for of ... loop
+    .entries() -> is a method that returns both keys and values of the Map using for of ... loop
+    .has(key) -> is a method that checks whether the given key is existing in the map or not
+    .delete() -> is a method removes values by key
+    .clear() -> is a method wipes out everthing from the Map
+
+    Object.entries() -> method can be used to convert object into Map
+    Object.fromEntries -> method can be used to convert Map into object
+
+Q.1) What are the advantages of using Map over objects?
+A.1) Maps keys can be values. They can be of any data type      - Object string only can be used in keys
+     Keys, insertion and retrieval is always in the same order  - Object keys are not ordered
+     size property that returns number of key/value pairs       - Object do not have size property
+     Maps are iterable                                          - Object are not
+     Maps perform better that object when it comes to data manipulation
+Q.2) How will you iterate through Map ?
+A.2) values, keys and entries methods and forEach allows to loop through the Map collection easily
+Q.3) Can you assign key/values with this syntax?
+map[‘key’]=value
+Explain the reason for the answer.
+A.3) Yes it's possible but it's the wrong way to assign values to Map collection it will look like using the Object data structure
+Q.4) How can you convert simple objects to Map?
+A.4) let obj = {
+    pCode:1001,
+    pName:'Orange',
+    price:56
+    }
+    let m = new Map(Object.entries(obj));
+    console.log(m);
+
+Q.5) How can you convert a Map into simple objects?
+A.5) let product = new Map();
+    product.set('pCode','1001')
+                .set('pName','Apple')
+                .set('price',45);
+        
+    let obj = Object.fromEntries(product.entries());
+    console.log(obj);
+
+Q.6) How will you remove an item or all items from Map?
+A.6) let product=new Map();
+    product.set('pCode',1001)
+            .set('pName','Orange')
+            .set('price',56);
+    console.log(product);
+    product.delete('pName');
+    console.log(product);
+
+    console.log(product,product.size);
+    product.clear();
+    console.log(product,product.size);

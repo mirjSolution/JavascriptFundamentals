@@ -1,0 +1,8 @@
+So from javascript when you are trying to change something, inside the javascript section you need to have reference of html elements
+
+Q.1) Can you use document.getElementById() & element.getElementById() ?
+A.2) The document.getElementById() is possible but the element.getElementById() is not possible because the searching of element by id is always for entire document not for specific region
+Q.2) What does the getElementsByTagName() return ?
+A.2) It returns the array of elements
+Q.3) What is the difference between getElementsByClassName() & getElementsByName() ?
+A.4) getElementsByClassName() refers to the class of an element whereas the getElementsByName() refers to the name given to the element

@@ -1,0 +1,14 @@
+Q.1) What is template literal?
+A.1) A newer way to declare string.
+Q.2) How will you display a value or an expression inside template string?
+A.2) let a = 5
+     console.log(`The value of a = ${a}`)
+Q.3) What is the advantage of template literals?
+A.3) let a = 5
+     let str = `The value of a = ${a}`
+     console.log(str)
+
+     let str = `dgsdgsdgdg
+        fasfsafsaffs
+                fasfasfsafsafsa
+     `

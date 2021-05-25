@@ -1,0 +1,27 @@
+4 most known methods one can use to add or remove elements (push, pop, shift, unshift)
+-> push and unshift use to add elements
+-> push() method adds 1 or more element at the end of an array and it returns the new length i.e. count of elements after adding elements
+-> unshift() method adds 1 or more element at the beginning of an array and it returns the new length i.e. 
+count of elements after adding elements
+-> pop and shift methods are use to remove elements
+-> pop() method removes last element from an array and it return removed element
+-> shift() method removes first element of an array and it return removed element
+-> splice() method can add, insert, replace, or even remove one or more elements
+-> splice() method is a fantastic way to deal with various types of operations within array
+-> splice() method changes the original array which is not a very good practice in some cases
+
+
+Q.1) What is the difference between push() and unshift() method ?
+A.1) push() method adds the element ad the end of array whereas unshift() method will add the element at the beginning
+Q.2) What is the difference between pop() and shift() ?
+A.2) pop() method removes the element from the end of array whereas shift() method will remove the element from the beginning
+Q.3) How can you insert an element at a given position ?
+A.3) splice() method is used to insert an element at a given poisition ( arr.splice(0,0,'New') )
+Q.4) How can you remove  a specific element ?
+A.4) splice() method is used to remove a specific element ( arr.splice(2,1) )
+Q.5) What does splice() return ?
+A.5) splice() method returns deleted items, if there is nothing to delete then it will return an empty array
+Q.6)  If there is no element removed then what will splice() method return ?
+=> let arr=["One","Two","Three","Four","Five"];
+     console.log(arr.splice(2,0,"New")); 
+A.6) [] empty array, and it will insert New element to the array without removing or replacing an element in the array

@@ -1,0 +1,14 @@
+Note!
+- Closure -> When a function comes under another function a 'closure' is created
+- Closure pattern remember outer variable and also helps to access outer scope members
+- When you use closure, you are making private members globally available
+- Closure is useful when you want to make few private members available globally when needed
+Q.1) How can you access private variable or function outside the scope ?
+A.1) function outer {
+        return function() {
+            console.log('inner called')
+        }
+     }
+     outer();
+Q.2) Explain the advantage of closure ?
+A.2) - The main advantage of 'closure' is that any member which is private or certain scope, can be accessed keeping it private so that the variable is away from any accidental change of value. Accessing private members with closure pattern assure better approach of making a variable global

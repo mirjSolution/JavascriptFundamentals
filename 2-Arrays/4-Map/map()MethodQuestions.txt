@@ -1,0 +1,20 @@
+map() method returns new array and it not changed the original array
+Q.1) Find length of each element in a new array.
+A.1) let arr = ['test', 'test12', 'test123', 'test1234']
+	 let lArr = arr.map(element => element.length)
+	 console.log(lArr)
+	
+Q.2) Find the square root of every element and store it in new array.
+A.2) let arr = [25, 16, 36, 10]
+	 let sArr = arr.map(element => Math.sqrt(element))
+	 console.log(sArr)
+Q.3) There is an array called products as shown here
+         => let products=[
+    	{pCode:1,pName:"Apple"},
+    	{pCode:2,pName:"Banana"},
+    	{pCode:3,pName:"Grapes"},
+    	{pCode:4,pName:"Oranges"}
+              ]
+Get all product names (i.e pNames) in a new array.
+A.4) let pNames = products.map(element => element.pname)
+	 console.log(pNames)

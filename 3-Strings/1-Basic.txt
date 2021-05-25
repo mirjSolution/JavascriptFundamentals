@@ -1,0 +1,14 @@
+Q.1) Explain various ways to declare a string variable?
+A.2) let str = "Hello World"
+     let str = 'Hello World'
+     let str = `Hello World`
+Q.2) How will you deal with unicode characters?
+A.2) let str = "\u00A9"
+     console.log(str)
+     
+     let str = "\u{1F601}"
+     console.log(str) 
+
+Q.3) Show the syntax to display long unicode characters
+    let str = "\u{1F602}"
+    console.log(str)

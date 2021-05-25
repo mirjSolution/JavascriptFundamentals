@@ -1,0 +1,49 @@
+Object literal - is simply a key value pair data structure
+
+Q.1) Can you have dynamic keys with object literal?
+A.1) Yes by putting brackets on key
+let tV = 'pCode';
+let obj = {
+  [tV]: 1001,
+  pName: 'Apple',
+  ['get' + 'Data']() {
+    console.log(obj.pCode, obj.pName);
+  },
+};
+
+Q.2) can you add read-only properties to an object?
+A.2) Yes you can by defining object define property
+const proto = Object.defineProperty({}, 'prop', {
+    writable: true, 
+    value: 1230,
+});
+const obj = Object.create(proto);
+obj.prop = 456;
+console.log(obj.prop);
+
+Q.3) What is property value short hand with object literal?
+A.3) let pCode = 1001;
+let pName = 'Apple';
+
+let obj = {
+  pCode, //Property Value Short hands
+  pName, //Property Value Short hand
+
+  getData() {
+    console.log(obj.pCode, obj.pName);
+  },
+};
+obj.getData();
+
+Q.4) What will be the output of this code?
+let obj={a:'First'};
+let obj1 = obj;
+obj1.a="Second";
+console.log(obj.a);
+Explain the reason why?
+Second -> because obj1 and obj has a the same reference to variable 'a'
+Q.5) How can we create a clone or separate copy of an object literal?
+let obj={a:'First'};
+let obj1 = Object.assign({}, obj);
+console.log(obj1);
+

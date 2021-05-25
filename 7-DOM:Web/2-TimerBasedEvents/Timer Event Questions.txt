@@ -1,0 +1,8 @@
+Q.1) Explain the difference between setTimeout() and setInterval() ?
+A.1) setTimeout() => set only once after a given number of intervals
+setInterval() => keeps of executing
+Q.2) Why can't we write document.setTimeout() or document.setInterval() ?
+A.2) setTimeout and setInterval is part of the window object not the document object
+Q.3) How can you stop a timer ?
+A.3) We use clearInterval() to stop the timer
+Q.4) How will you create a digital clock ?

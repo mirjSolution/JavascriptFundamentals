@@ -1,0 +1,38 @@
+By default any function that have any return statement will return undefined
+By writing async function 
+1. You do not need to write "return" function
+2. To return a "rejected" state, throw statement is written to reject a promise
+
+"await" makes sure to wait until a "Promise" is settled, it can be it resolved or rejected
+
+await - is used with asynchoronous function only
+asynchoronous - written before a function, that means the function is returning promise only
+
+Q.1) Can you write await without async ?
+A.1) No it's not possible, you always have to use the async wrapper to use 'await'
+Q.2) Do you need to return a promise from an async function ?
+A.2) No you do not need to return a Promise from an async function
+Q.3) Can you have an async IIFE ?
+A.3) Yes any function can be aysnc IIFE function
+Q.4) Which is the best way to handle errors with await ?
+A.4) async function test() {
+        try {
+           let res = await cSqr(2);
+           console.log(res);
+           let res1 = await cSqr(res);
+           console.log(res1);
+           let res2 = await cSqr(res1);
+           console.log(res2);
+        } catch(err) {
+            // statement
+        }  
+     }
+Q.5) Explain the syntax of Promise.all() with async/await ?
+A.5) Whenever we are using Promise.all() that means, the multiple promises you pass is an iterable and if it is resolved then that will return one promise
+
+async function getData() {
+   const data = Promise.all([
+      await fetch(API-URL1),
+      await fetch(API-URL2)
+   ])
+}

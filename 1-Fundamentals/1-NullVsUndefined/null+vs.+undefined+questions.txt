@@ -1,0 +1,6 @@
+Q.1) What is "undefined" in JavaScript ?
+A.1) A variable which is not assigned a value is 'undefined'
+Q.2) What will be the output of undefined==null & undefined===null ? Why ?
+A.2) 2 equal sign means or simple comparison is true because both of them have the same value it means 'nothing' and 3 equal sign or strict comparison equals false because null and undefined is different they have the same value but the data types is different.
+Q.3) Can you explicitly assign "undefined" to a variable ? (let i = undefined)
+A.3) Yes, you can explicitly assign 'undefined' to a variable

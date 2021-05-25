@@ -1,0 +1,12 @@
+Callback functions nowadays are replaced with promises and async/await
+Callback functions are used when there is an Asynchronous process 
+
+callback function - is a function as a parameter in another function
+callback hell or pyramid of doom - tringular shaped like structure that's why it's called pyramid of doom
+
+
+Q.1)What is an Asynchronous process ?
+A.1) Asynchornous - A process which takes some time to execute is an Asynchronous process, it won't execute immediately
+
+Q.2)What is the meaning of callback hell or pyramid of doom ?
+A.2) it is difficult to handle as there multiple api calls and callback functions

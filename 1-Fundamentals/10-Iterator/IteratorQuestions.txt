@@ -1,0 +1,18 @@
+Iterator -> iterate or traverse through data structure
+Note! Array -> array is already iterable
+- It means if you want to put a for ...of loop on an array, then you can easily do that
+
+Rules -> when you want to make an object literal iterable it should have method having key value as Symbol.iterator
+      -> The object literal should also have the next() method
+
+Limitation -> returning the object reference is only possible when iterator & iterable are the same object
+    -> if there are two or more for ...of running simultaneously then this syntax will work
+
+Q.1) What is the purpose of the iterator ?
+A.1) To make a data structure iterable which is not e.g. object literal
+- Array, String, Maps or Sets or other similar collections are already iterable.
+- When you create an object which should have a facility of putting for ...of loop on it, then you need to create a iterator
+Q.2) How do you create an iterator ?
+- The 'Symbol.iterator' method must be implemented which should return an iterator object and should also have a next() method which returns the object
+Q.3) Explain a practical use of an iterator ?
+- The primary purpose of an iterator is to allow a user to process every element of a container while isolating the user from the internal structure of the container. This allows the container to store elements in any manner it wishes while allowing the user to treat it as if it were a simple sequence or list.

@@ -1,0 +1,13 @@
+Q.1) What is default export/import & the difference between named & default export/import ?
+A.1) export function sum(a,b)           -> import {sum} from './test'.js -> Named import and export
+     export default function sum(a, b)  -> import sum from './test.js' -> Default import and export
+     
+Q.2) Explain various ways of implementing default export/import ?
+A.2) export default function sum(a,b)   ->  import sum from './test.js'
+     export default function (a,b)
+     function sum(a,b) {
+         return a + b;
+     }
+     export default sum;
+     or 
+     export { sum as default }

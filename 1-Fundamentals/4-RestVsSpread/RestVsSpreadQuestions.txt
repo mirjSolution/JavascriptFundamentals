@@ -1,0 +1,23 @@
+Note! 
+- The rest operator is part of ES6, In ES5 we have array like object called 'arguments' which does not work in arrow function.
+- So whenever you use (...) with function to deal with any number of parameters, then you call it Rest operator, i.e, for the rest parameters
+- Spread Operator - spreads the array into separate data values.
+Q.1) Can we use arguments object in arrow function?
+A.1) No it will not work. If it is a normal or traditional function it will work.
+Q.2) Which is the best way to create new arrays with assignment?
+A.2) The better way of assigning array is using the spread operator.
+Q.3) How can you handle the 'n' number of parameters passed to a function ? or create a function which can take any number of parameters and returns sum or max or any other such calculative values.
+A.3) let arr = [1, 5, 89, 5, 900, 234, 1456];
+console.log(Math.max(...arr));
+
+const sum = arr.reduce((a, b) => a + b, 0);
+console.log(sum);
+
+Q.4) Can the rest operator be placed anywhere in the function parameter list? Or
+      function test(...a,b){
+         //statements
+      }
+Is this piece of code valid? Give the reason.
+A.4) No it cannot be placed anywhere it should be always placed at the end of the parameter list. The code is invalid and will return a SyntaxError, because rest operator must always be placed at the end of the parameter list
+
+

@@ -1,0 +1,25 @@
+onfocus - Fires the moment when the element gets focus
+
+
+
+Q.1) What is the difference between onblur and onchange event?
+A.1) onblur - Fires the moment that the element loses focus
+onchange - Fires the moment when the value of the element is changed
+Q.2) How will you handle events of checkbox and radio buttons?
+A.2) onchange event is generally used to handle textbox, check box, select box and radio buttons
+Q.3) Differentiate onkeypress/onkeyup and oninput event.
+A.3) onkeyup/onkeypress - will not be fired when content is copy pasted or voice input going to the textbox.
+     oninput - Script to be run when an element gets user input and fires when content is copy pasted or voice input going to the textbox
+Q.4) Which event you prefer with select [i.e. drop down list]?
+A.4) onchange event
+Q.5) How will you get the text value of selected item from a select element i.e. a drop down list?
+A.5) <select onchange="eHandler(this.options[this.selectedIndex].text)">
+       <option value="1"> List 1</option>
+       <option value="2">List 2</option>
+       <option value="3">List 3</option>
+       <option value="4">List 4</option>
+     </select> 
+
+
+
+

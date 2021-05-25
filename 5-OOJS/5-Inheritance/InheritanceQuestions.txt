@@ -1,0 +1,25 @@
+-> Inheritance or subclassing is a very important concept and often used with object oriented patterns.
+-> in ES6 'extends' is the keyword to inherit class.
+-> Inheritance is needed when you have unique or common member
+
+Q.1) How can you inherit a class?
+A.1) By using the 'extends' keyword in will inherit any class 
+Q.2) What is subclassing?
+A.2) Inheritance is subclassing it will inherit the property and method of the class
+Q.3) What is the purpose of super keyword?
+A.3) 'super' keyword is the keyword which helps you to access members of the parent class
+      super() - call parent constructor 
+      super().method - call parent method
+      super().property - access parent property
+Q.4) How will you override a method?
+    To override a method in JS we use the 'super' keyword
+Q.5) How can you extend a built-in class? 
+A.5) class Child extends String{
+
+      noc(str){
+          console.log(str.length)
+      }
+}
+const obj = new Child1("Test string");
+console.log(obj.toLowerCase());
+obj.noc("another string");

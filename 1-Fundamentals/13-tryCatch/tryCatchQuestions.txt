@@ -1,0 +1,20 @@
+TryCatch
+- Ideally you should write the code with proper validations but still there are some unforeseen situations where the program breaks in between
+- Ideally what should happen is that when the program faces errors, even after validations, it should handle it and notify the user with proper error details like error number and description
+- If you do not face any error at compile time but at run time if you face any error then you can, use the try catch block
+- It might also happen that you want to generate your own custom errors, you can generate custom errors by using throw operator ( The error object can be of class Error, TypeError, SyntaxError etc.  )
+
+
+Q.1) When do you need try...catch ? 
+A.1) Try catch is something which is handled at runtime, so when code is executed, some portion of code needs to be managed properly so that the program doesn't stop in between then you use try catch block
+Q.2) How can you generate an error ?
+A.2) You can generate custom errors with throw statement
+     ANy pre defined Javascript error class can be generated using trow statement
+Q.3) Can you generate SyntaxError or ReferenceError kind of errors ?
+A.3) Yes, by using throw statement to raise the javascript built-in errors
+Q.4) What is the purpose of the finally block ?
+A.4) The finally block is always executed whether there is an error or not, so the code which ought to be executed we put it in finally block 
+Q.5) How can you refer to the name or description of error ?
+A.5) Inside the catch block => catch (err) { console.log(err.name); console.log(err.message); console.log(err.stack) }
+Q.6) Can we have finally without a catch block as well ?
+A.6) Yes we can have finally block without catch

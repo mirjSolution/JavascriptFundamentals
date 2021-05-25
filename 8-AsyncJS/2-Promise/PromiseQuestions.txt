@@ -1,0 +1,39 @@
+To avoid the callback hell Promises object was invented
+Promises object is a better way to write callback processes, and the best way to know this is by converting or rather refactoring code of callback function with promise.
+
+When we create a promise, by default there is a pending state / pending status
+
+resolve - return success.
+reject - return failure.
+
+.then - will execute the processes
+.catch - will execute any error occured
+.finally - will execute after all the other processess are executed
+
+By default function cannot use ".then" you should return promise
+Every ".then" should return a promise when you are chaining the promise with multiple processes
+
+Q.1) How will you configure a process which should be executed at the end of promise resolve or reject ?
+A.1) .finally() - is use to execute a process which should be executed at the end
+Q.2) What is chaining the promise ? Explain the syntax.
+A.2) When it comes to chaining we do not keep on writing multiple promises in a nested pattern Every ".then" should return a promise when you are chaining the promise with multiple processes
+Q.3) What will be the output of the given code?
+	const pr = new Promise((resolve,reject)=>{
+    	resolve("Over");
+    	setTimeout(()=>{
+        	resolve("Again");
+    	},2000)
+         })
+ 
+	pr.then((msg)=>{
+   	console.log(msg);
+   	return pr;
+         }).then((msg)=>{
+    	console.log(msg);
+         })
+A.3) the output is "Over Over" once it's executed it doesn't proceed to other line of code
+Q.4) What is the status of promise by default ?
+A.4) When the promise object is created it has 'pending status' by default
+Q.5) What will be the status of promise when resolved or rejected ?
+A.5) the status if resolve = fullfill and if rejected the status is rejected as well
+
