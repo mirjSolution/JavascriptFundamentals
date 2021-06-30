@@ -5,4 +5,4 @@ A.2) ES5 has a function scope & that is about hoisting, ES6 does not have 'hoist
 Q.3) What is hoisting in javascript ?
 A.3) A process which happening behind the scene, internally it is bringing the declarations on top
 Q.4) How does block scope work ?
-A.4) It is nothing but the brackets {}, an if condition, for loop, do while loop etc. that is a block creates seperate scope for declarations existing in that block.
+A.4) It is nothing but the brackets {}, like if condition, for loop, do while loop etc. that creates seperate scope for declarations existing inside the block.

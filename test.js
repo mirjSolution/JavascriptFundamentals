@@ -1,12 +1,5 @@
-// Reverse number
-function reverseNumber(num) {
-  let rev = 0;
-  let rem = 0;
-  while (num > 0) {
-    rem = num % 10;
-    rev = rev * 10 + rem;
-    num = parseInt(num / 10);
-  }
-  console.log(rev);
-}
-reverseNumber(103242323);
+const test = () => {
+  console.log(this);
+};
+
+test();

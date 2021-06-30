@@ -1,3 +1,4 @@
+// Scope
 function a() {
   var x = 10;
 }
@@ -6,3 +7,4 @@ function b() {
 }
 a();
 b();
+// Ref err x is not defined

@@ -8,16 +8,30 @@ Q.2) Which is the best way to create new arrays with assignment?
 A.2) The better way of assigning array is using the spread operator.
 Q.3) How can you handle the 'n' number of parameters passed to a function ? or create a function which can take any number of parameters and returns sum or max or any other such calculative values.
 A.3) let arr = [1, 5, 89, 5, 900, 234, 1456];
-console.log(Math.max(...arr));
 
-const sum = arr.reduce((a, b) => a + b, 0);
-console.log(sum);
+function getMaxValue(arr) {
+  return Math.max(...arr);
+}
 
-Q.4) Can the rest operator be placed anywhere in the function parameter list? Or
+const maxValue = getMaxValue(arr);
+console.log(maxValue);
+
+// 1456
+
+function getSum(...num) {
+  return arr.reduce((a, b) => a + b, 0);
+}
+
+
+const sum = getSum(1, 5, 89, 5, 900, 234, 1456);
+console.log(sumOfArray);
+
+// 2690
+
+Q.4) Can the rest operator be placed anywhere in the function parameter list? Or Is this piece of code valid? Give the reason.
       function test(...a,b){
          //statements
       }
-Is this piece of code valid? Give the reason.
-A.4) No it cannot be placed anywhere it should be always placed at the end of the parameter list. The code is invalid and will return a SyntaxError, because rest operator must always be placed at the end of the parameter list
 
+A.4) No it cannot be placed anywhere it should be always placed at the end of the parameter list. The code is invalid and will return a SyntaxError
 
